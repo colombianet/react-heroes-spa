@@ -5,3 +5,9 @@
 - Leer argumentos por URL
 - QueryParams
 - Aplicar filtros utilizando QueryStrings
+- Rutas públicas
+- Rutas privadas
+- Login y logout - Sin backend
+- Recordar cuál fue la última ruta visitada para mejorar la experiencia de usuario.
+- Context
+- Reducer

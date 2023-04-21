@@ -1,9 +1,13 @@
+import { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../auth";
 
 export const NavBar = () => {
     const navigate = useNavigate();
+    const { user, logout } = useContext( AuthContext );
 
     const onNavigate = () => {
+        logout();
         navigate('login', {
             replace: true
         });
@@ -25,7 +29,7 @@ export const NavBar = () => {
                 </div>
                 <div className="d-flex">
                     <span className="navbar-text text-light mx-2">
-                        Navbar text with an inline element
+                        { user?.name }
                     </span>
                     <button className="btn btn-danger" onClick={ onNavigate }>Logout</button>
                 </div>

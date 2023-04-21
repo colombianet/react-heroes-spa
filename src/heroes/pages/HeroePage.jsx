@@ -16,7 +16,7 @@ export const HeroePage = () => {
   };
 
   return (
-    <div className="row mt-5 animate__animated animate__fadeIn">
+    <div className="row mt-5 animate__animated animate__fadeIn animate__faster">
       <div className="col-4">
         <img src={`/assets/heroes/${ hero.id }.jpg`} alt={ hero.superhero } className="img-thumbnail" />
       </div>

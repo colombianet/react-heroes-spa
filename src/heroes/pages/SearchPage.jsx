@@ -47,8 +47,8 @@ export const SearchPage = () => {
           <hr />
 
           {
-            q == '' ? <div className="alert alert-primary animate__animated animate__fadeIn">Search a hero</div>
-              : heroes.length == 0 && <div className="alert alert-danger animate__animated animate__fadeIn">There's no results with {q}</div>
+            q == '' ? <div className="alert alert-primary animate__animated animate__fadeIn animate__faster">Search a hero</div>
+              : heroes.length == 0 && <div className="alert alert-danger animate__animated animate__fadeIn animate__faster">There's no results with {q}</div>
           }
 
           {
